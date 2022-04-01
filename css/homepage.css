@@ -1,0 +1,368 @@
+body {
+ margin: 0;   
+}
+
+img {
+    width: 100%;
+}
+
+/* =========
+typography
+========= */
+
+    strong {
+        color: #1792D2;
+    }
+
+/* Logo */
+
+    .logo, .subtitle {
+        text-align: center;
+    }
+
+    .logo {
+        font-family: 'Lora', serif;
+        font-size: 1.5rem;
+        color: #143774;
+    }
+
+    .subtitle {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: .7rem;
+        color: #1792D2;
+        text-transform: uppercase;
+        /* border: 2px dotted red; */
+    }
+
+/* Links */
+
+    a {
+        text-decoration: none;
+        color: #1792D2;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Navigation bar */
+
+    .navlink {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: .7rem;
+        font-weight: 700;
+        color: #717171;
+        text-transform: uppercase;
+        /* border: red 2px solid; */
+    }
+
+/* write-up page text */
+    .write-up h1, .write-up h2 {
+        font-family: 'Lora', serif;
+    }
+
+    .write-up h1 {
+        font-size: 1.5rem;
+        color: #143774;
+    }
+
+    .write-up h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #1792D2;
+    }
+
+/* Articles */
+
+    .article-title {
+        font-family: 'Lora', serif;
+        font-size: 1.5rem;
+        color: #143774;
+    }
+
+    .info {
+        font-family: 'Lora', serif;
+        font-size: .8rem;
+        color: #707070;
+    }
+
+    .snippet {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #707070;
+    }
+
+    .link2article {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        font-size: .875rem;
+        color: #1792D2;
+        text-transform: uppercase;
+    }
+
+/* sidebar text */
+
+    .about-me h3, 
+    .recent-posts-list h3 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1rem;
+        color: #143774;
+        text-transform: uppercase;
+    }
+
+    .sidebar p {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        font-size: .8rem;
+        color: #143774;
+    }
+
+    .rp-list-item h4 {
+        font-family: 'Lora', serif;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #143774;
+    }
+
+/* footer */
+
+    footer h2, footer p {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1rem;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    footer h2 {
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    footer p {
+        font-weight: 300;
+        margin-top: .4em;
+    }
+
+
+/* =========
+layout, alignment, etc
+========= */
+
+/* alignment properties */
+
+    .hor-center {
+        margin: auto 0;
+    }
+
+/* header */
+
+    header {
+        background-color: #F8F8F8;
+        padding: 1.5em 0;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .subtitle {
+        margin: .2em 0 0 0;
+    }
+
+/* container/bounding box */
+
+    .container {
+        /* border: #143774 solid 2px; */
+        width: 92%;
+        margin: 0 auto;
+    }
+
+/* navigation links */
+
+nav ul {
+    /* border: rgb(198, 195, 2) 2px solid; */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    nav li {
+    /* border: red 2px solid; */
+    margin-bottom: 1em;
+    }
+
+    .current-pg {
+    border-bottom: #707070 solid 1.5px;
+    padding-bottom: 3px;    
+    }
+
+/* about-me page write-up */
+    .write-up {
+        margin-top: 3em;
+    }
+
+/* Articles - featured */
+
+    .featured {
+        display: flex;
+        flex-direction: column;
+        /* border: #1792D2 solid 2px; */
+        margin-top: 3em;
+        padding-bottom: 1.5em;
+        border-bottom: 1.5px #707070 solid;
+    }
+
+    /* article ordering */
+        .featured img {order: 0;}
+        .featured .info {order: 1;}
+        .featured .article-title {order: 2;}
+        .featured .snippet {order: 3;}
+        .featured .link2article {order: 4;}
+
+    .info {
+        margin-bottom: 0.7em;
+    }
+
+    .article-title {
+        margin: 0;
+    }
+
+    .snippet {
+        margin: 0.4em 0 1.2em 0;
+    }
+
+/* Article - below featured */
+
+    .below-featured {
+        margin-top: 3em;
+    }
+
+    .below-featured img {
+        height: 12em;
+        object-fit: cover;
+    }
+
+/* sidebar content */
+
+    /* about me */
+    .about-me {
+        border: #EBEBEB 20px solid;
+        padding: 1em 1.5em;
+        margin-top: 3em;
+    }
+    .about-me h3 {
+        margin: 0 0 1em 0;
+        /* border: dotted 2px red; */
+    }
+
+    .about-me img {
+        height: 8em;
+        object-fit: cover;
+        /* border: dotted 2px red; */
+    }
+
+    .about-me p {
+        margin-bottom: 0;
+    }
+
+    /* recent post widget */
+    .recent-posts-list {
+        border: #EBEBEB 20px solid;
+        padding: 1em 1.5em;
+        margin-top: 3em;
+    }
+
+    .recent-posts-list h3 {
+        margin: 0 0 1em 0;
+    }
+
+    .rp-list-item {
+        border-bottom: 1px solid #707070;
+        /* border: 2px dotted red; */
+        margin-bottom: 1em;
+    }
+
+    .rp-list-item img {
+        height: 8em;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    .rp-list-item h4 {
+        margin: 0.5em 0 1em 0;
+    }
+
+    .rp-last-item {
+        border: none;
+        margin-bottom: 0;
+        /* border: red dotted 2px; */
+    }
+
+    .rp-last-item h4 {
+        margin: 0;
+    }
+
+/* footer */
+
+    footer {
+        background-color: #143774;
+        padding: 2em 0;
+        margin-top: 3em;
+    }
+
+/* =========
+media queries
+========= */
+
+@media (min-width: 750px) {
+
+    .logo, 
+    .subtitle {
+        text-align: left;
+    }
+
+    /* container/bounding box */
+    .container {
+        /* border: #143774 solid 2px; */
+        width: 80%;
+        max-width: 800px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* navigation links */
+
+    nav ul {
+        /* border: rgb(198, 195, 2) 2px solid; */
+        flex-direction: row;
+        justify-content: space-between;
+        }
+
+        nav li {
+        /* border: red 2px solid; */
+        margin: 0 0 0 1.5em;
+        }
+    
+    /* Article space */
+    .flex-start {
+        justify-content: flex-start;
+    }
+
+    main {
+        width: 67%;
+    }
+
+    /* sidebar */
+    .sidebar {
+        width: 28%;
+    }
+    
+    .about-me {margin-top: 3em;} /* equal to the margin top of .featured article class */
+
+    .rp-list-item img {
+        height: 4em;
+    }
+}
