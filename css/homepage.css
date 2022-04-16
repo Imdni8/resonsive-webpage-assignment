@@ -1,5 +1,6 @@
 body {
- margin: 0;   
+ margin: 0;
+ line-height: 1.7;
 }
 
 img {
@@ -31,6 +32,7 @@ typography
         font-size: .7rem;
         color: #1792D2;
         text-transform: uppercase;
+        letter-spacing: 1px;
         /* border: 2px dotted red; */
     }
 
@@ -53,6 +55,7 @@ typography
         font-weight: 700;
         color: #717171;
         text-transform: uppercase;
+        letter-spacing: 1.2px;
         /* border: red 2px solid; */
     }
 
@@ -99,6 +102,7 @@ typography
         font-size: .875rem;
         color: #1792D2;
         text-transform: uppercase;
+        letter-spacing: 2px;
     }
 
 /* sidebar text */
@@ -120,6 +124,7 @@ typography
 
     .rp-list-item h4 {
         font-family: 'Lora', serif;
+        line-height: 1.4;
         font-weight: 300;
         font-size: 1rem;
         color: #143774;
@@ -162,12 +167,8 @@ layout, alignment, etc
         padding: 1.5em 0;
     }
 
-    .logo {
+    .logo, .subtitle {
         margin: 0;
-    }
-
-    .subtitle {
-        margin: .2em 0 0 0;
     }
 
 /* container/bounding box */
